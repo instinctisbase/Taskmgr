@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Taskmgr.py'],
-             pathex=['/home/job/Desktop/netspeed'],
+             pathex=['/home/job/Taskmgr/Taskmgr'],
              binaries=[],
              datas=[],
              hiddenimports=[],

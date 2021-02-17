@@ -250,12 +250,12 @@ while(1):
             pass
 
     try:
-        stdscr.addstr(0,0,"进程名称",curses.A_BOLD)
-        stdscr.addstr(0,int(width/7*2),"进程号",curses.A_BOLD)
-        stdscr.addstr(0,int(width/7*3),"CPU:"+str(cpu_usage)+"%",curses.A_BOLD)
-        stdscr.addstr(0,int(width/7*4),"内存:"+str(mem_usage)+"%",curses.A_BOLD)
-        stdscr.addstr(0,int(width/7*5),"硬盘:"+str(io_usage)+"%",curses.A_BOLD)
-        stdscr.addstr(0,int(width/7*6),"网络:"+str(band_usage)+"%",curses.A_BOLD)
+        stdscr.addstr(0,0,"进程名称",curses.color_pair(3))
+        stdscr.addstr(0,int(width/7*2),"进程号",curses.color_pair(3))
+        stdscr.addstr(0,int(width/7*3),"CPU:"+str(cpu_usage)+"%",curses.color_pair(3))
+        stdscr.addstr(0,int(width/7*4),"内存:"+str(mem_usage)+"%",curses.color_pair(3))
+        stdscr.addstr(0,int(width/7*5),"硬盘:"+str(io_usage)+"%",curses.color_pair(3))
+        stdscr.addstr(0,int(width/7*6),"网络:"+str(band_usage)+"%",curses.color_pair(3))
         stdscr.refresh()
     
     except curses.error:
